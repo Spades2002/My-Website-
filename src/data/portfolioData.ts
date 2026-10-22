@@ -81,7 +81,7 @@ export const PORTFOLIO_DATA = {
     { label: "Engineering Projects", value: "9+", detail: "Robotics, AI, Biomechatronics, Optics" },
     { label: "Technical Certifications", value: "9", detail: "Ford, Microsoft, Arm, edX, C++" },
     { label: "Degree Programs", value: "2", detail: "MSc (Distinction track) & BEng (Hons)" },
-    { label: "Industry & Academic Roles", value: "4", detail: "Mining automation, Tutoring, Retail" }
+    { label: "Engineering & Academic Roles", value: "3", detail: "Control Engineering & Tutoring" }
   ],
 
   skillCategories: [
@@ -309,19 +309,6 @@ export const PORTFOLIO_DATA = {
   ] as ProjectItem[],
 
   experience: [
-    {
-      id: "smyths",
-      role: "Retail Assistant",
-      company: "Smyths Toy Store",
-      period: "Nov 2024 - Dec 2024",
-      bullets: [
-        "Enhanced customer experience by resolving complex product enquiries and guiding purchasing decisions through expert product knowledge.",
-        "Optimised store operations by reorganising high-traffic displays and implementing efficient stock tracking methods.",
-        "Maintained visual merchandising standards that increased product visibility and sales performance.",
-        "Streamlined stock management processes, reducing discrepancies and improving replenishment efficiency."
-      ],
-      skills: ["Customer Communication", "Inventory Management", "Process Optimization", "Problem Solving"]
-    },
     {
       id: "fqm-intern",
       role: "Control Engineering Intern",
