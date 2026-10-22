@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, ArrowRight, Github, Linkedin, Mail, Sparkles, Award, Cpu, ShieldCheck } from 'lucide-react';
+import { Download, ArrowRight, Github, Linkedin, Mail, Sparkles, Award, Cpu, ShieldCheck, GraduationCap } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
 
 interface HeroProps {
@@ -35,6 +35,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDocs }) => {
               <h2 className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-400 bg-clip-text text-transparent">
                 {PORTFOLIO_DATA.profile.title}
               </h2>
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-slate-400 text-sm font-medium pt-1">
+                <GraduationCap className="w-4 h-4 text-cyan-400/90" />
+                <span>Graduated with Distinction</span>
+              </div>
             </div>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">

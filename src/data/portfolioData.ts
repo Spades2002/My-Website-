@@ -79,7 +79,7 @@ export const PORTFOLIO_DATA = {
   stats: [
     { label: "Engineering Projects", value: "9+", detail: "Robotics, AI, Biomechatronics, Optics" },
     { label: "Technical Certifications", value: "9", detail: "Ford, Microsoft, Arm, edX, C++" },
-    { label: "Degree Programs", value: "2", detail: "MSc (Distinction track) & BEng (Hons)" },
+    { label: "Degree Programs", value: "2", detail: "MSc (Distinction) & BEng (Hons)" },
     { label: "Engineering & Academic Roles", value: "3", detail: "Control Engineering & Tutoring" }
   ],
 
@@ -352,7 +352,7 @@ export const PORTFOLIO_DATA = {
   education: [
     {
       id: "qmul",
-      degree: "MSc Robotics and Artificial Intelligence",
+      degree: "MSc Robotics and Artificial Intelligence (Distinction)",
       school: "Queen Mary University of London",
       period: "Sep 2025 - Sep 2026",
       keyProjects: [
