@@ -58,10 +58,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDocs }) => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-3">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 pt-3">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 transition-all hover:scale-[1.02] active:scale-95"
+                className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 transition-all hover:scale-[1.02] active:scale-95"
               >
                 <span>View Engineering Projects</span>
                 <ArrowRight className="w-4 h-4" />
@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDocs }) => {
               <a
                 href={PORTFOLIO_DATA.profile.cvUrl}
                 download="Staines_Rajith_CV.pdf"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold text-sm transition-all hover:border-cyan-500/50"
+                className="flex-1 sm:flex-initial justify-center inline-flex items-center gap-2 px-4 sm:px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold text-sm transition-all hover:border-cyan-500/50"
               >
                 <Download className="w-4 h-4 text-cyan-400" />
                 <span>Download CV</span>
@@ -78,42 +78,43 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDocs }) => {
 
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-transparent hover:bg-slate-900 text-slate-300 hover:text-white text-sm font-medium transition-all"
+                className="flex-1 sm:flex-initial justify-center inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-slate-900 sm:bg-transparent hover:bg-slate-900 border border-slate-800 sm:border-transparent text-slate-300 hover:text-white text-sm font-medium transition-all"
               >
                 <Mail className="w-4 h-4 text-slate-400" />
                 <span>Contact</span>
               </a>
             </div>
 
-            {/* Social Links Row */}
-            <div className="flex items-center justify-center lg:justify-start gap-4 pt-2 text-slate-400 text-xs">
+            {/* Social Links Row (Mobile-safe flex wrap) */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-2 pt-2 text-slate-400 text-xs max-w-full">
               <span className="font-mono text-slate-500">Connect:</span>
               <a
                 href={PORTFOLIO_DATA.profile.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-cyan-400 flex items-center gap-1.5 transition-colors"
+                className="hover:text-cyan-400 inline-flex items-center gap-1.5 transition-colors"
               >
                 <Github className="w-4 h-4" />
                 <span>GitHub</span>
               </a>
-              <span className="text-slate-700">•</span>
+              <span className="text-slate-700 hidden sm:inline">•</span>
               <a
                 href={PORTFOLIO_DATA.profile.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-cyan-400 flex items-center gap-1.5 transition-colors"
+                className="hover:text-cyan-400 inline-flex items-center gap-1.5 transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
                 <span>LinkedIn</span>
               </a>
-              <span className="text-slate-700">•</span>
+              <span className="text-slate-700 hidden sm:inline">•</span>
               <a
                 href={`mailto:${PORTFOLIO_DATA.profile.email}`}
-                className="hover:text-cyan-400 flex items-center gap-1.5 transition-colors"
+                className="hover:text-cyan-400 inline-flex items-center gap-1.5 transition-colors truncate max-w-[200px] sm:max-w-none"
+                title={PORTFOLIO_DATA.profile.email}
               >
-                <Mail className="w-4 h-4" />
-                <span>{PORTFOLIO_DATA.profile.email}</span>
+                <Mail className="w-4 h-4 shrink-0" />
+                <span className="truncate">{PORTFOLIO_DATA.profile.email}</span>
               </a>
             </div>
           </div>

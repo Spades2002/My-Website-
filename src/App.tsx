@@ -18,12 +18,12 @@ export default function App() {
   const [docsModalOpen, setDocsModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-cyan-500 selection:text-white">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-cyan-500 selection:text-white overflow-x-hidden w-full max-w-full">
       {/* Navigation */}
       <Navbar onOpenDocs={() => setDocsModalOpen(true)} />
 
       {/* Main Content Sections */}
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         <Hero onOpenDocs={() => setDocsModalOpen(true)} />
         <About />
         <SkillsMatrix />
