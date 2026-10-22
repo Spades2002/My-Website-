@@ -46,7 +46,7 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left Column: Image with tech badges */}
           <div className="lg:col-span-5">
-            <div className="relative mx-auto max-w-md">
+            <div className="mx-auto max-w-md">
               <div className="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl group">
                 <div className="aspect-[4/5] overflow-hidden">
                   <img
@@ -55,16 +55,19 @@ export const About: React.FC = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="p-4 bg-slate-900/90 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300">
-                  <span className="font-medium">Robotics & AI Researcher</span>
-                  <span className="text-cyan-400 font-mono">QMUL • London</span>
+                <div className="p-4 bg-slate-900/95 border-t border-slate-800 space-y-2">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-semibold text-white flex items-center gap-1.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span>BEng (Hons) & MSc Graduate</span>
+                    </span>
+                    <span className="text-cyan-400 font-mono text-[11px]">QMUL • London</span>
+                  </div>
+                  <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-slate-800/60">
+                    <span>Robotics & AI Researcher</span>
+                    <span className="text-slate-500">Autonomous Systems</span>
+                  </div>
                 </div>
-              </div>
-
-              {/* Floating mini badge */}
-              <div className="absolute -bottom-4 -right-4 p-3 rounded-xl bg-slate-950/90 border border-slate-700 shadow-xl backdrop-blur-md hidden sm:flex items-center gap-2 text-xs">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span className="text-slate-200 font-medium">BEng Hons & MSc Graduate</span>
               </div>
             </div>
           </div>
