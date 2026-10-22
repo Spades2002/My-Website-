@@ -64,7 +64,6 @@ export const PORTFOLIO_DATA = {
     logoImage: "/images/logo.png",
     faviconImage: "/fav.png",
     cvUrl: "/CV.pdf",
-    stainesCvUrl: "/Staines CV.pdf",
     email: "stainesr.27@outlook.com",
     githubUrl: "https://github.com/Spades2002",
     linkedinUrl: "https://linkedin.com/in/stainesrajith",

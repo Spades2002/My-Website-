@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Github, Linkedin, Menu, X, FileText, ChevronDown } from 'lucide-react';
+import { Download, Github, Linkedin, Menu, X, FileText } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
 
 interface NavbarProps {
@@ -9,7 +9,6 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ onOpenDocs }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [cvDropdownOpen, setCvDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -103,49 +102,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDocs }) => {
               <Linkedin className="w-4 h-4" />
             </a>
 
-            {/* CV Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setCvDropdownOpen(!cvDropdownOpen)}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs font-semibold tracking-wide hover:from-cyan-400 hover:to-blue-500 transition-all shadow-md shadow-cyan-500/20 active:scale-95"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Resume / CV</span>
-                <ChevronDown className="w-3 h-3 opacity-80" />
-              </button>
-
-              {cvDropdownOpen && (
-                <div
-                  className="absolute right-0 mt-2 w-56 rounded-xl bg-slate-900 border border-slate-700 shadow-2xl py-2 z-50 text-xs animate-in fade-in slide-in-from-top-2"
-                  onMouseLeave={() => setCvDropdownOpen(false)}
-                >
-                  <a
-                    href={PORTFOLIO_DATA.profile.cvUrl}
-                    download="Staines_Rajith_CV.pdf"
-                    className="flex items-center gap-2.5 px-4 py-2.5 text-slate-200 hover:bg-slate-800 hover:text-cyan-400"
-                    onClick={() => setCvDropdownOpen(false)}
-                  >
-                    <FileText className="w-4 h-4 text-cyan-400" />
-                    <div>
-                      <div className="font-semibold">Standard CV</div>
-                      <div className="text-[10px] text-slate-400">PDF Document (55 KB)</div>
-                    </div>
-                  </a>
-                  <a
-                    href={PORTFOLIO_DATA.profile.stainesCvUrl}
-                    download="Staines_Rajith_Extended_CV.pdf"
-                    className="flex items-center gap-2.5 px-4 py-2.5 text-slate-200 hover:bg-slate-800 hover:text-cyan-400 border-t border-slate-800/80"
-                    onClick={() => setCvDropdownOpen(false)}
-                  >
-                    <FileText className="w-4 h-4 text-blue-400" />
-                    <div>
-                      <div className="font-semibold">Comprehensive CV</div>
-                      <div className="text-[10px] text-slate-400">Detailed PDF (169 KB)</div>
-                    </div>
-                  </a>
-                </div>
-              )}
-            </div>
+            {/* Direct CV Download */}
+            <a
+              href={PORTFOLIO_DATA.profile.cvUrl}
+              download="Staines_Rajith_CV.pdf"
+              className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs font-semibold tracking-wide hover:from-cyan-400 hover:to-blue-500 transition-all shadow-md shadow-cyan-500/20 active:scale-95"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download CV</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

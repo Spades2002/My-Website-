@@ -60,18 +60,11 @@ export const DocsLibrary: React.FC<DocsLibraryProps> = ({ isOpen, onClose }) => 
       size: "406 KB"
     },
     {
-      title: "Staines Rajith - Standard Resume / CV",
+      title: "Staines Rajith - Curriculum Vitae (CV)",
       category: "Curriculum Vitae",
-      desc: "Concise summary of robotics engineering experience, academic honors, technical skills, and key projects.",
+      desc: "Summary of robotics engineering experience, academic background, technical skills, and key projects.",
       url: "/CV.pdf",
       size: "56 KB"
-    },
-    {
-      title: "Staines Rajith - Comprehensive Extended CV",
-      category: "Curriculum Vitae",
-      desc: "Complete academic and professional record including coursework details, full module lists, and technical proficiencies.",
-      url: "/Staines CV.pdf",
-      size: "172 KB"
     }
   ];
 
@@ -100,7 +93,7 @@ export const DocsLibrary: React.FC<DocsLibraryProps> = ({ isOpen, onClose }) => 
             Engineering Reports, Papers & Dissertations
           </h2>
           <p className="text-slate-400 text-xs sm:text-sm">
-            Direct access to all 9 original research reports, competition review PDFs, and CVs.
+            Direct access to all 8 original research reports, competition review PDFs, and CV.
           </p>
         </div>
 
