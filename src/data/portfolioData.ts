@@ -45,6 +45,8 @@ export interface AchievementItem {
   title: string;
   issuer: string;
   category: string;
+  date?: string;
+  certificatePdf: string;
 }
 
 export interface SkillCategory {
@@ -389,15 +391,78 @@ export const PORTFOLIO_DATA = {
   ] as EducationItem[],
 
   achievements: [
-    { id: "ford", title: "EV Engineering Advanced Job Simulation", issuer: "Forage (Ford)", category: "Automotive & EV" },
-    { id: "cpp", title: "C++ Programming", issuer: "OpenEDG C++ Institute", category: "Programming" },
-    { id: "py", title: "Programming with Python", issuer: "OpenEDG Python Institute", category: "Programming" },
-    { id: "msft", title: "Career Essentials in Software Development", issuer: "Microsoft", category: "Software" },
-    { id: "autocad", title: "AutoCAD 2D", issuer: "CADD Centre Training Services", category: "CAD & Drafting" },
-    { id: "croma", title: "Python Specialization", issuer: "Croma Campus Pvt. Ltd", category: "Data & Scripting" },
-    { id: "aws", title: "AWS Release and Deploy", issuer: "edX", category: "Cloud & DevOps" },
-    { id: "plc", title: "PLC Programming", issuer: "Udemy", category: "Industrial Automation" },
-    { id: "arm", title: "Machine Learning at the Edge", issuer: "Arm", category: "Embedded AI" }
+    {
+      id: "catia",
+      title: "Learning CATIA v5",
+      issuer: "LinkedIn Learning",
+      category: "CAD & Digital Design",
+      date: "Sep 2024",
+      certificatePdf: "/certificates/CATIA_v5.pdf"
+    },
+    {
+      id: "c-embedded",
+      title: "C Programming for Embedded Applications",
+      issuer: "LinkedIn Learning",
+      category: "Embedded Systems",
+      date: "Jul 2024",
+      certificatePdf: "/certificates/C_Programming_Embedded.pdf"
+    },
+    {
+      id: "ford",
+      title: "EV Engineering Advanced Job Simulation",
+      issuer: "Forage (Ford)",
+      category: "Automotive & EV",
+      date: "Oct 2024",
+      certificatePdf: "/certificates/EV_Engineering_Ford.pdf"
+    },
+    {
+      id: "cpp",
+      title: "C++ Programming Professional Certificate",
+      issuer: "OpenEDG C++ Institute & LinkedIn Learning",
+      category: "Programming & OOP",
+      date: "Sep 2024",
+      certificatePdf: "/certificates/Cpp_Programming_OpenEDG.pdf"
+    },
+    {
+      id: "py",
+      title: "Programming with Python Professional Certificate",
+      issuer: "OpenEDG Python Institute & LinkedIn Learning",
+      category: "Programming & OOP",
+      date: "Sep 2024",
+      certificatePdf: "/certificates/Python_Programming_OpenEDG.pdf"
+    },
+    {
+      id: "msft",
+      title: "Career Essentials in Software Development",
+      issuer: "Microsoft & LinkedIn Learning",
+      category: "Software Engineering",
+      date: "Jul 2024",
+      certificatePdf: "/certificates/Career_Essentials_Software_Development_Microsoft.pdf"
+    },
+    {
+      id: "aws",
+      title: "AWS-DEVOPS-2: DevOps on AWS: Release and Deploy",
+      issuer: "Amazon Web Services (edX)",
+      category: "Cloud & CI/CD",
+      date: "Oct 2024",
+      certificatePdf: "/certificates/AWS_DevOps_Release_Deploy.pdf"
+    },
+    {
+      id: "plc",
+      title: "PLC Programming - Learn the basics with CoDeSys",
+      issuer: "Udemy",
+      category: "Industrial Automation",
+      date: "Jul 2024",
+      certificatePdf: "/certificates/PLC_Programming_CODESYS.pdf"
+    },
+    {
+      id: "arm",
+      title: "ML101: Machine Learning at the Edge: A Practical Introduction",
+      issuer: "Arm (edX)",
+      category: "Embedded AI & Edge ML",
+      date: "May 2025",
+      certificatePdf: "/certificates/Machine_Learning_Edge_Arm.pdf"
+    }
   ] as AchievementItem[],
 
   gallery: [
