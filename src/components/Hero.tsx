@@ -40,7 +40,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDocs, onViewCv }) => {
               </p>
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
                 Staines Rajith,
-                <span className="block font-bold text-3xl sm:text-5xl lg:text-5xl mt-2 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-600 dark:from-cyan-400 dark:via-teal-300 dark:to-blue-400 bg-clip-text text-transparent">
+                <span className="block font-bold text-3xl sm:text-5xl lg:text-5xl mt-2 pb-2.5 leading-normal bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-600 dark:from-cyan-400 dark:via-teal-300 dark:to-blue-400 bg-clip-text text-transparent">
                   a Robotics & AI Engineer.
                 </span>
               </h1>
