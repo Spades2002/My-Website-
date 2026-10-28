@@ -17,11 +17,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDocs }) => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo & Identity */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-[8px] overflow-hidden flex items-center justify-center shadow-xs border border-slate-200/70 dark:border-cyan-500/30 bg-white dark:bg-slate-900">
+            <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center shadow-sm">
               <img
                 src={PORTFOLIO_DATA.profile.logoImage}
                 alt="Staines Logo"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).src = PORTFOLIO_DATA.profile.faviconImage;
                 }}

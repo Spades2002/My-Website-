@@ -10,7 +10,7 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [viewMode, setViewMode] = useState<'carousel' | 'grid'>('carousel');
+  const [viewMode, setViewMode] = useState<'carousel' | 'grid'>('grid');
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const categories = [
@@ -143,24 +143,23 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
               <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
                 {/* Visual Image container */}
                 <div
-                  className="lg:col-span-7 relative aspect-[16/10] bg-slate-950 overflow-hidden cursor-pointer group"
+                  className="lg:col-span-7 relative aspect-[16/10] bg-white dark:bg-slate-950 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-800 overflow-hidden cursor-pointer group flex items-center justify-center p-3"
                   onClick={() => onSelectProject(currentProject)}
                 >
                   <img
                     src={currentProject.image}
                     alt={currentProject.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent opacity-60" />
 
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-lg bg-slate-950/80 backdrop-blur-md text-cyan-300 font-mono text-xs font-semibold border border-slate-700/80">
+                    <span className="px-3 py-1 rounded-lg bg-slate-950/85 backdrop-blur-md text-cyan-300 font-mono text-xs font-semibold border border-slate-700/80 shadow-sm">
                       {currentProject.categoryLabel}
                     </span>
                   </div>
 
                   <div className="absolute bottom-4 right-4">
-                    <span className="px-3 py-1.5 rounded-xl bg-cyan-600/90 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-black/40">
+                    <span className="px-3 py-1.5 rounded-xl bg-cyan-600 text-white text-xs font-semibold flex items-center gap-1.5 shadow-lg shadow-black/20">
                       <span>Inspect Project</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </span>
@@ -299,18 +298,17 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
               >
                 {/* Thumbnail */}
                 <div
-                  className="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer"
+                  className="relative aspect-video overflow-hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 cursor-pointer flex items-center justify-center p-2"
                   onClick={() => onSelectProject(project)}
                 >
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60" />
 
                   <div className="absolute top-3 left-3">
-                    <span className="px-2.5 py-1 rounded-md bg-slate-950/80 backdrop-blur-md border border-slate-700/80 text-[10px] font-mono font-medium text-cyan-300">
+                    <span className="px-2.5 py-1 rounded-md bg-slate-950/85 backdrop-blur-md border border-slate-700/80 text-[10px] font-mono font-medium text-cyan-300 shadow-sm">
                       {project.categoryLabel}
                     </span>
                   </div>

@@ -63,8 +63,8 @@ export const PORTFOLIO_DATA = {
     heroBio: "MSc graduate in Robotics and Artificial Intelligence with a passion for automation, robotics, and data-driven systems. Experienced in industrial PLCs, embedded programming, and real-time control systems.",
     heroImage: "/images/image1.JPG",
     aboutImage: "/images/my-photo4.jpg",
-    logoImage: "/images/logo.png",
-    faviconImage: "/fav.png",
+    logoImage: "/assets/aistudio/sr-logo-1024_3b742ab6.png",
+    faviconImage: "/assets/aistudio/sr-logo-1024_3b742ab6.png",
     cvUrl: "/CV.pdf",
     email: "stainesr.27@outlook.com",
     githubUrl: "https://github.com/Spades2002",
@@ -115,7 +115,7 @@ export const PORTFOLIO_DATA = {
       category: "robotics",
       categoryLabel: "Soft Robotics & AI",
       content: "Designed and built a compact photoelastic palm sensor in collaboration with Shadow Robotics, addressing space constraints through folded optics. Automated indentation and synchronised data collection to evaluate four learning architectures, achieving a lowest normal-force MAE of 0.244 N and sub-millimetre localisation with separate models at held-out contact locations.",
-      image: "/images/Tactile Sensor.jpg",
+      image: "/assets/aistudio/tactile-sensor_57d0cff3.png",
       badges: ["Soft Robotics", "Tactile Sensing", "Computer Vision", "Deep Learning", "Shadow Robotics"],
       featured: {
         name: "Download Dissertation",
@@ -140,7 +140,7 @@ export const PORTFOLIO_DATA = {
       category: "ai-ml",
       categoryLabel: "Deep Learning & Healthcare",
       content: "Collaborated on a group project investigating MRI segmentation with limited labelled data. Implemented and compared supervised U-Net and Reptile meta-learning approaches, combining binary cross-entropy and Dice loss. Evaluated adaptation across different support-set sizes using held-out Dice scores and visual comparisons to assess few-shot segmentation performance.",
-      image: "/images/Deep-learning.jpg",
+      image: "/assets/aistudio/deep-learning_5918d613.png",
       badges: ["Medical Imaging", "U-Net", "Meta-Learning", "PyTorch", "Few-Shot"],
       links: [
         {
@@ -161,7 +161,7 @@ export const PORTFOLIO_DATA = {
       category: "space",
       categoryLabel: "Space Robotics & Avionics",
       content: "Led electrical subsystem development as Vice Lead and Electrical Team Lead for a competition rover. Designed power distribution and coordinated hardware integration, resolving faults through system-level testing. Contributed to the team placing third overall at the UKSEDS Olympus Rover Trials Finals at RAL Space and receiving the Best Critical Design Review Award.",
-      image: "/images/Rover.jpg",
+      image: "/assets/aistudio/rover_bf7f3ea2.png",
       badges: ["Project management", "Raspberry Pi", "Electrical Debugging", "Hardware Integration"],
       featured: {
         name: "Download Design Review",
@@ -186,7 +186,7 @@ export const PORTFOLIO_DATA = {
       category: "space",
       categoryLabel: "Space & Biomechatronics",
       content: "Led a team to the finals of an Airbus-hosted design competition with a modular lunar mobility concept for prosthetic support and astronaut augmentation. Coordinated the technical feasibility study and business proposal, defining a variable-impedance knee and a modular manufacturing strategy. Delivered a concept-stage proposal addressing engineering feasibility and commercial viability.",
-      image: "/images/Exoskeleton.jpg",
+      image: "/assets/aistudio/exoskeleton_c3e0e0eb.png",
       badges: ["Airbus Competition", "Team Leadership", "Concept Design", "Space Robotics", "Biomechatronics"],
       featured: {
         name: "Download Technical Study",
@@ -210,7 +210,7 @@ export const PORTFOLIO_DATA = {
       category: "systems",
       categoryLabel: "Software & NLP Automation",
       content: "Developed a Streamlit application to help engineering graduates find relevant entry-level roles. Integrated spaCy-based CV skills extraction with SerpApi job searches, enabling users to upload a PDF CV and retrieve matching UK vacancies with application links.",
-      image: "/images/jobfinder.png",
+      image: "/assets/aistudio/jobfinder_e5cf36d3.png",
       badges: ["Python", "NLP", "Web Scraping", "Streamlit", "spaCy"],
       links: [
         {
@@ -231,7 +231,7 @@ export const PORTFOLIO_DATA = {
       category: "ai-ml",
       categoryLabel: "Computer Vision & Robotics",
       content: "Developed a real-time robotics perception prototype combining YOLOv8 object detection with KNN colour classification trained on 865 named colours. Integrated both models with OpenCV webcam processing, enabling simultaneous object identification and colour labelling within a modular vision pipeline.",
-      image: "/images/object detection.jpg",
+      image: "/assets/aistudio/object-detection_6fcfd945.png",
       badges: ["OpenCV", "YOLOv8", "KNN", "Computer Vision"],
       links: [
         {
@@ -252,7 +252,7 @@ export const PORTFOLIO_DATA = {
       category: "systems",
       categoryLabel: "Sustainable Infrastructure & CAD",
       content: "Led the conceptual design of an eco-friendly campus monorail for WSP, addressing transport accessibility and sustainability. Analysed routes and developed carriage concepts incorporating energy-efficient systems and accessible features, delivering a proposal that balanced passenger needs with infrastructure and environmental constraints.",
-      image: "/images/monorail.jpg",
+      image: "/assets/aistudio/monorail_dbad4be3.png",
       badges: ["CAD", "Automation", "Sustainable Design", "WSP Infrastructure"],
       featured: {
         name: "Download Monorail Report",
@@ -270,7 +270,7 @@ export const PORTFOLIO_DATA = {
       category: "systems",
       categoryLabel: "Optical Instrumentation & Sensors",
       content: "Developed a fibre-optic Sagnac interferometer to investigate roll-angle measurement. Captured and analysed oscilloscope data, integrating measured angular velocity to estimate angular displacement. Demonstrated angular-distance measurement and identified directional ambiguity as a limitation of the system.",
-      image: "/images/roll-angle.png",
+      image: "/assets/aistudio/roll-angle_b21fec5e.png",
       badges: ["Sensors", "MATLAB", "Data Analysis", "Fiber Optics"],
       featured: {
         name: "Download Literature Review",
@@ -295,7 +295,7 @@ export const PORTFOLIO_DATA = {
       category: "robotics",
       categoryLabel: "Mechatronics & Control Systems",
       content: "Led a team developing a robotic gymnastics rover to synchronise LED displays with live performances. Designed control algorithms and refined the mechanical design using Siemens NX, coordinating integration and iterative testing to deliver a responsive robotic performance system.",
-      image: "/images/stamp-bug.jpg",
+      image: "/assets/aistudio/stamp-bug_ecd52358.png",
       badges: ["Robotics", "Control Systems", "Mechatronics", "Siemens NX"],
       featured: {
         name: "Download Datasheet",

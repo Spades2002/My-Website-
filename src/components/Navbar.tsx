@@ -54,11 +54,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDocs, onViewResume, onGoHo
             }}
             className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 rounded-[10px] overflow-hidden flex items-center justify-center transition-transform group-hover:scale-105 shadow-xs border border-slate-200/70 dark:border-cyan-500/30 bg-white dark:bg-slate-900">
+            <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center transition-transform group-hover:scale-105 shadow-sm">
               <img
                 src={PORTFOLIO_DATA.profile.logoImage}
                 alt="Staines Rajith Logo"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).src = PORTFOLIO_DATA.profile.faviconImage;
                 }}
