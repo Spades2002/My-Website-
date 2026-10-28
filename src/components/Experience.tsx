@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, ExternalLink } from 'lucide-react';
 import { motion } from 'motion/react';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
 
@@ -39,18 +39,41 @@ export const Experience: React.FC = () => {
                 transition={{ duration: 0.2 }}
                 className="rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800/90 p-6 hover:shadow-md transition-all space-y-4"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-3 border-b border-slate-200 dark:border-slate-800/80">
-                  <div>
+                <div className="pb-3 border-b border-slate-200 dark:border-slate-800/80 space-y-1.5">
+                  {/* Role Name (Left) & City/Country Location (Right-aligned, same line) */}
+                  <div className="flex items-baseline justify-between gap-4">
                     <h3 className="text-lg font-bold text-slate-900 dark:text-white">
                       {item.role}
                     </h3>
-                    <div className="text-sm font-semibold text-cyan-700 dark:text-cyan-400">
-                      {item.company}
-                    </div>
+                    {item.location && (
+                      <span className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 shrink-0 text-right">
+                        {item.location}
+                      </span>
+                    )}
                   </div>
-                  <div className="sm:hidden inline-flex items-center gap-1.5 text-xs font-mono text-cyan-700 dark:text-cyan-400 pt-1 font-semibold">
-                    <Calendar className="w-3.5 h-3.5" />
-                    <span>{item.period}</span>
+
+                  {/* Company Name as Hyperlink (Same color) */}
+                  <div className="flex items-center justify-between gap-2">
+                    {item.companyUrl ? (
+                      <a
+                        href={item.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-cyan-700 dark:text-cyan-400 hover:underline inline-flex items-center gap-1.5 transition-colors group/link"
+                        title={`Visit ${item.company} website`}
+                      >
+                        <span>{item.company}</span>
+                        <ExternalLink className="w-3.5 h-3.5 opacity-60 group-hover/link:opacity-100 transition-opacity" />
+                      </a>
+                    ) : (
+                      <div className="text-sm font-semibold text-cyan-700 dark:text-cyan-400">
+                        {item.company}
+                      </div>
+                    )}
+                    <div className="sm:hidden inline-flex items-center gap-1.5 text-xs font-mono text-cyan-700 dark:text-cyan-400 font-semibold">
+                      <Calendar className="w-3.5 h-3.5" />
+                      <span>{item.period}</span>
+                    </div>
                   </div>
                 </div>
 

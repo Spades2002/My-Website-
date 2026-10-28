@@ -35,6 +35,8 @@ export interface ExperienceItem {
   id: string;
   role: string;
   company: string;
+  companyUrl?: string;
+  location?: string;
   period: string;
   bullets: string[];
   skills: string[];
@@ -314,6 +316,8 @@ export const PORTFOLIO_DATA = {
       id: "fqm-intern",
       role: "Control Engineering Intern",
       company: "First Quantum Minerals Ltd",
+      companyUrl: "https://www.first-quantum.com/",
+      location: "Solwezi, Zambia",
       period: "Jul 2022 - Aug 2022",
       bullets: [
         "Optimised industrial equipment performance by collaborating with supervisors to maintain peak copper smelter efficiency.",
@@ -327,6 +331,8 @@ export const PORTFOLIO_DATA = {
       id: "trident",
       role: "Teaching Assistant",
       company: "Trident College",
+      companyUrl: "https://trident-schools.com/",
+      location: "Solwezi, Zambia",
       period: "Jan 2021 - Mar 2021",
       bullets: [
         "Elevated A-level student performance through targeted one-to-one tutoring in mathematics and sciences.",
@@ -340,6 +346,8 @@ export const PORTFOLIO_DATA = {
       id: "fqm-assistant",
       role: "Technical Team Assistant",
       company: "First Quantum Minerals Ltd",
+      companyUrl: "https://www.first-quantum.com/",
+      location: "Solwezi, Zambia",
       period: "Nov 2018 - Dec 2018",
       bullets: [
         "Improved machinery reliability through proactive monitoring and maintenance in copper smelting operations.",
